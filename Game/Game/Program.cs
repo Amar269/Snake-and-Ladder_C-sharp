@@ -40,8 +40,12 @@ namespace SnakeLadderGame
                     break;
             }
 
+            if (player1Pos < 0)
+            {
+                player1Pos = 0;
+            }
 
-
+            Console.WriteLine($"Player position: {player1Pos}");
 
 
         }
