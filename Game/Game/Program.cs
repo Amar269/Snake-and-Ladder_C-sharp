@@ -23,6 +23,26 @@ namespace SnakeLadderGame
             int dice = rand.Next(1, 7);
             Console.WriteLine($"Dice rolled: {dice}");
 
+            GameOption option = (GameOption)rand.Next(0, 3);
+
+            switch (option)
+            {
+                case GameOption.NoPlay:
+                    Console.WriteLine("No Play");
+                    break;
+
+                case GameOption.Ladder:
+                    Console.WriteLine("Ladder");
+                    break;
+
+                case GameOption.Snake:
+                    Console.WriteLine("Snake");
+                    break;
+            }
+
+
+
+
 
         }
     }
