@@ -33,10 +33,13 @@ namespace SnakeLadderGame
 
                 case GameOption.Ladder:
                     Console.WriteLine("Ladder");
+                    if (player1Pos + dice <= 100)   
+                        player1Pos += dice;
                     break;
 
                 case GameOption.Snake:
                     Console.WriteLine("Snake");
+                    player1Pos -= dice;             
                     break;
             }
 
