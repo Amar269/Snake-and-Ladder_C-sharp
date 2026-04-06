@@ -19,6 +19,11 @@ namespace SnakeLadderGame
 
             Console.WriteLine("Snake & Ladder Game Started ");
             Console.WriteLine($"Player starting position: {player1Pos}");
+
+            int dice = rand.Next(1, 7);
+            Console.WriteLine($"Dice rolled: {dice}");
+
+
         }
     }
 }
